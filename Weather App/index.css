@@ -1,0 +1,210 @@
+body {
+  background-color: rgb(235, 235, 235);
+  margin: 0;
+}
+
+.weatherForm {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cityInput {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 30%, 0.3);
+  border-radius: 10px;
+  width: 300px;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.btn,
+.dayDisplayButton {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(8, 150, 150);
+  color: white;
+  cursor: pointer;
+}
+
+.dayDisplayButton {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn:hover,
+.dayDisplayButton:hover {
+  background-color: rgb(8, 161, 161);
+}
+
+.card {
+  background: linear-gradient(200deg, rgb(36, 101, 240), rgb(236, 169, 44));
+  padding: 50px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeCard {
+  background: linear-gradient(200deg, rgb(36, 101, 240), rgb(236, 169, 44));
+  padding: 50px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 9px 0;
+}
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 50px;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.minTempDisplay {
+  font-size: 35px;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.descDisplay {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.dayDisplay {
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.tempGroupDisplay {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.weatherEmoji {
+  margin: 0;
+  font-size: 120px;
+}
+
+.errorDisplay {
+  font-size: 45px;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.cardDays {
+  border: 2px solid hsla(0, 0%, 30%, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards,
+.timeCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (min-width: 0) and (max-width: 650px) {
+  .weatherForm {
+    margin: 20px;
+  }
+
+  .cityInput {
+    width: 400px;
+  }
+
+  .inputForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card,
+  .timeCard {
+    min-width: 450px;
+    padding: 50px 0;
+  }
+
+  .cards,
+  .timeCards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cardDays {
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 750px) {
+  .inputForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1450px) {
+  .cards,
+  .timeCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1450px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .timeCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
